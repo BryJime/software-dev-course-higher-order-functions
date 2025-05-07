@@ -44,15 +44,16 @@ Step-by-Step:
 3. Return the filtered result.
 */
 
-/*
-function filterProducts(products, callback){
-    return products.filter(callback);
-};
+//MY CODE:
 
-let productsAvailable = filterProducts(products, (product) => product.inStock === true);
+// function filterProducts(products, callback){
+//     return products.filter(callback);
+// };
 
-console.log(productsAvailable);
-*/
+// let productsAvailable = filterProducts(products, (product) => product.inStock === true);
+
+// console.log(productsAvailable);
+
 
 /*
 🔹 Task 2: Transform Product Names
@@ -64,6 +65,8 @@ Step-by-Step:
 2. Extract and transform the `name` property to uppercase.
 3. Store the result in a new variable.
 */
+
+//MY CODE:
 
 // let uppercaseProductNames = products.map(names => names.name.toUpperCase())
 // console.log(uppercaseProductNames);
@@ -81,6 +84,8 @@ Step-by-Step:
 2. Return a new function that takes a product object.
 3. Use this returned function inside a `map()` call to apply discounts to all products.
 */
+
+//MY CODE:
 
 // function applyDiscount(discoutPercent){
 //   return function(product){
@@ -106,17 +111,18 @@ Step-by-Step:
 3. Store the total in a new variable.
 */
 
+//MY CODE: 
 
-const pricesOfInStockProducts = products.reduce(
-  (accumulator, product) => {
-    if (product.inStock === true){
-      accumulator += product.price;
-    }
-    return accumulator; 
-  }
-,0);
+// const pricesOfInStockProducts = products.reduce(
+//   (accumulator, product) => {
+//     if (product.inStock === true){
+//       accumulator += product.price;
+//     }
+//     return accumulator; 
+//   }
+// ,0);
 
-console.log(pricesOfInStockProducts);
+// console.log(pricesOfInStockProducts);
 
 // ============================================
 // 🧪 Console Test Your Work
